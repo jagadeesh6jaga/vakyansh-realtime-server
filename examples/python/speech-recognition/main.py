@@ -67,11 +67,11 @@ def transcribe_audio_bytes(stub, audio_bytes, language, audio_format, transcript
 
 
 if __name__ == '__main__':
-    with open('secret/server.crt', 'rb') as f:
-        trusted_certs = f.read()
+    # with open('secret/server.crt', 'rb') as f:
+    #     trusted_certs = f.read()
     # create credentials
-    credentials = grpc.ssl_channel_credentials(root_certificates=trusted_certs)
-    host = "localhost"
+    # credentials = grpc.ssl_channel_credentials(root_certificates=trusted_certs)
+    host = "speech-one.eastus.cloudapp.azure.com"
     port = 50052
     with grpc.insecure_channel('{}:{}'.format(host, port) ,options=(('grpc.enable_http_proxy', 0),)) as channel:
         stub = SpeechRecognizerStub(channel)
@@ -79,14 +79,14 @@ if __name__ == '__main__':
         audio_url = 'https://storage.googleapis.com/test_public_bucket/download.mp3'
         audio_bytes = read_audio()
 
-        response = transcribe_url(stub, audio_url, language, 'mp3', 'transcript')
-        print(response.output[0].source)
+        # response = transcribe_url(stub, audio_url, language, 'mp3', 'transcript')
+        # print(response.output[0].source)
 
-        response = transcribe_url(stub, audio_url, language, 'mp3', 'srt')
-        print(response.output[0].source)
+        # response = transcribe_url(stub, audio_url, language, 'mp3', 'srt')
+        # print(response.output[0].source)
 
         response = transcribe_audio_bytes(stub, audio_bytes, language, 'wav', 'transcript')
         print(response.output[0].source)
 
-        response = transcribe_audio_bytes(stub, audio_bytes, language, 'wav', 'srt')
-        print(response.output[0].source)
+        # response = transcribe_audio_bytes(stub, audio_bytes, language, 'wav', 'srt')
+        # print(response.output[0].source)
