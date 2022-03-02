@@ -1,0 +1,7 @@
+{
+    "hi": {
+        "path": "/deployed_models/hindi/hindi.pt",
+        "enablePunctuation": true,
+        "enableITN": true
+    }
+}
