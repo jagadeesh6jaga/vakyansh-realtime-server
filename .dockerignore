@@ -1,0 +1,14 @@
+__pycache__/
+.circleci
+.idea
+.pytest_cache
+dependencies
+examples
+infra
+.dockerignore
+.gitignore
+README.md
+Dockerfile
+.DS_Store
+model_dict.json
+ingress-secret.yaml

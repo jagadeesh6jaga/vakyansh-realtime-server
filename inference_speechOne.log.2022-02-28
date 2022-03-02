@@ -1,0 +1,201 @@
+2022-02-28 07:58:55,390 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(55) - INFO - User has provided gpu as False gpu_present True
+2022-02-28 07:58:55,439 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(29) - INFO - Initializing realtime and batch inference service
+2022-02-28 07:58:55,439 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(38) - INFO - User has provided gpu as False
+2022-02-28 07:58:55,440 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(41) - INFO - GPU available on machine True
+2022-02-28 07:58:55,440 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(44) - INFO - Loading models from  with gpu value: False
+2022-02-28 07:58:55,440 — [MainThread] - src.model_service -  model_service.py.__init__(35) - INFO - environment requested languages ['all']
+2022-02-28 09:44:20,064 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(55) - INFO - User has provided gpu as False gpu_present True
+2022-02-28 09:44:20,080 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(29) - INFO - Initializing realtime and batch inference service
+2022-02-28 09:44:20,080 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(38) - INFO - User has provided gpu as False
+2022-02-28 09:44:20,080 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(41) - INFO - GPU available on machine True
+2022-02-28 09:44:20,081 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(44) - INFO - Loading models from  with gpu value: False
+2022-02-28 09:44:20,081 — [MainThread] - src.model_service -  model_service.py.__init__(35) - INFO - environment requested languages ['all']
+2022-02-28 09:44:20,081 — [MainThread] - src.model_service -  model_service.py.__init__(43) - INFO - configuration from model_dict.json is {'hi': {'path': '/home/neo/vakyansh_2022/deployed_models/hindi/hindi.pt', 'enablePunctuation': True, 'enableITN': True}}
+2022-02-28 10:14:39,868 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(55) - INFO - User has provided gpu as False gpu_present True
+2022-02-28 10:14:39,883 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(29) - INFO - Initializing realtime and batch inference service
+2022-02-28 10:14:39,884 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(38) - INFO - User has provided gpu as False
+2022-02-28 10:14:39,884 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(41) - INFO - GPU available on machine True
+2022-02-28 10:14:39,884 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(44) - INFO - Loading models from  with gpu value: False
+2022-02-28 10:14:39,884 — [MainThread] - src.model_service -  model_service.py.__init__(35) - INFO - environment requested languages ['all']
+2022-02-28 10:14:39,884 — [MainThread] - src.model_service -  model_service.py.__init__(43) - INFO - configuration from model_dict.json is {'hi': {'path': '/home/neo/vakyansh_2022/deployed_models/hindi/hindi.pt', 'enablePunctuation': True, 'enableITN': True}}
+2022-02-28 10:14:39,884 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(20) - INFO - *** GPU is enabled: False ***
+2022-02-28 10:14:51,798 — [MainThread] - src.lib.inference_lib -  inference_lib.py.load_model_and_generator(463) - INFO - Loading model from /home/neo/vakyansh_2022/deployed_models/hindi/hindi.pt cuda False
+2022-02-28 10:14:52,709 — [MainThread] - src.model_service -  model_service.py.__init__(63) - INFO - Loaded hi model base_path is /home/neo/vakyansh_2022/deployed_models/hindi
+2022-02-28 10:15:04,994 — [MainThread] - src.model_service -  model_service.py.__init__(66) - INFO - Loaded hi model with Punctuation
+2022-02-28 10:15:04,994 — [MainThread] - src.model_service -  model_service.py.__init__(69) - INFO - Loaded hi model with ITN
+2022-02-28 10:15:04,994 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(50) - INFO - Models Loaded Successfully
+2022-02-28 10:28:55,297 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(55) - INFO - User has provided gpu as False gpu_present True
+2022-02-28 10:28:55,313 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(29) - INFO - Initializing realtime and batch inference service
+2022-02-28 10:28:55,313 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(38) - INFO - User has provided gpu as True
+2022-02-28 10:28:55,313 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(41) - INFO - GPU available on machine True
+2022-02-28 10:28:55,313 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(44) - INFO - Loading models from  with gpu value: True
+2022-02-28 10:28:55,313 — [MainThread] - src.model_service -  model_service.py.__init__(35) - INFO - environment requested languages ['all']
+2022-02-28 10:28:55,313 — [MainThread] - src.model_service -  model_service.py.__init__(43) - INFO - configuration from model_dict.json is {'hi': {'path': '/home/neo/vakyansh_2022/deployed_models/hindi/hindi.pt', 'enablePunctuation': True, 'enableITN': True}}
+2022-02-28 10:28:55,313 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(20) - INFO - *** GPU is enabled: True ***
+2022-02-28 10:28:55,313 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(23) - INFO - *** Total number of gpus allocated are 1 ***
+2022-02-28 10:28:55,314 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(24) - INFO - *** Cuda Version 11.0 ***
+2022-02-28 10:28:55,314 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(25) - INFO - *** Python process id 536143 ***
+2022-02-28 10:28:55,314 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(26) - INFO - *** The gpu device info : ***
+2022-02-28 10:28:55,314 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(28) - INFO - GPU 0 - Tesla V100-PCIE-16GB
+2022-02-28 10:29:07,721 — [MainThread] - src.lib.inference_lib -  inference_lib.py.load_model_and_generator(463) - INFO - Loading model from /home/neo/vakyansh_2022/deployed_models/hindi/hindi.pt cuda True
+2022-02-28 10:29:07,725 — [MainThread] - src.lib.inference_lib -  inference_lib.py.load_model_and_generator(467) - INFO - using current device: 0
+2022-02-28 10:29:08,707 — [MainThread] - src.lib.inference_lib -  inference_lib.py.load_model_and_generator(471) - INFO - Before half torch.float32
+2022-02-28 10:29:08,755 — [MainThread] - src.lib.inference_lib -  inference_lib.py.load_model_and_generator(478) - INFO - After half torch.float16
+2022-02-28 10:29:08,756 — [MainThread] - src.lib.inference_lib -  inference_lib.py.load_model_and_generator(482) - INFO - hi Model initialized with GPU successfully
+2022-02-28 10:29:08,757 — [MainThread] - src.model_service -  model_service.py.__init__(63) - INFO - Loaded hi model base_path is /home/neo/vakyansh_2022/deployed_models/hindi
+2022-02-28 10:29:13,609 — [MainThread] - src.model_service -  model_service.py.__init__(66) - INFO - Loaded hi model with Punctuation
+2022-02-28 10:29:13,609 — [MainThread] - src.model_service -  model_service.py.__init__(69) - INFO - Loaded hi model with ITN
+2022-02-28 10:29:13,609 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(50) - INFO - Models Loaded Successfully
+2022-02-28 10:55:55,334 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(55) - INFO - User has provided gpu as True gpu_present True
+2022-02-28 10:55:55,335 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(60) - INFO - ### GPU Utilization ###
+2022-02-28 10:55:55,473 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(66) - INFO - available GPUs ['0'], all GPUs [0], excluded GPUs [0]
+2022-02-28 10:55:55,544 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(74) - INFO - Selected GPUs: [] requested GPUs [0]
+2022-02-28 10:55:55,544 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(81) - INFO - selected gpu index: None selecting device: cuda
+2022-02-28 10:55:55,566 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(29) - INFO - Initializing realtime and batch inference service
+2022-02-28 10:55:55,566 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(38) - INFO - User has provided gpu as True
+2022-02-28 10:55:55,566 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(41) - INFO - GPU available on machine True
+2022-02-28 10:55:55,566 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(44) - INFO - Loading models from . with gpu value: True
+2022-02-28 10:55:55,566 — [MainThread] - src.model_service -  model_service.py.__init__(35) - INFO - environment requested languages ['all']
+2022-02-28 11:07:00,670 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(55) - INFO - User has provided gpu as True gpu_present True
+2022-02-28 11:07:00,670 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(60) - INFO - ### GPU Utilization ###
+2022-02-28 11:07:00,811 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(66) - INFO - available GPUs ['0'], all GPUs [0], excluded GPUs [0]
+2022-02-28 11:07:00,885 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(74) - INFO - Selected GPUs: [] requested GPUs [0]
+2022-02-28 11:07:00,886 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(81) - INFO - selected gpu index: None selecting device: cuda
+2022-02-28 11:07:00,907 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(29) - INFO - Initializing realtime and batch inference service
+2022-02-28 11:07:00,908 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(38) - INFO - User has provided gpu as True
+2022-02-28 11:07:00,908 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(41) - INFO - GPU available on machine True
+2022-02-28 11:07:00,908 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(44) - INFO - Loading models from . with gpu value: True
+2022-02-28 11:07:00,908 — [MainThread] - src.model_service -  model_service.py.__init__(35) - INFO - environment requested languages ['all']
+2022-02-28 11:22:20,203 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(55) - INFO - User has provided gpu as True gpu_present True
+2022-02-28 11:22:20,203 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(60) - INFO - ### GPU Utilization ###
+2022-02-28 11:22:20,341 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(66) - INFO - available GPUs ['0'], all GPUs [0], excluded GPUs [0]
+2022-02-28 11:22:20,410 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(74) - INFO - Selected GPUs: [] requested GPUs [0]
+2022-02-28 11:22:20,410 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(81) - INFO - selected gpu index: None selecting device: cuda
+2022-02-28 11:22:20,432 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(29) - INFO - Initializing realtime and batch inference service
+2022-02-28 11:22:20,432 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(38) - INFO - User has provided gpu as True
+2022-02-28 11:22:20,432 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(41) - INFO - GPU available on machine True
+2022-02-28 11:22:20,432 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(44) - INFO - Loading models from ../ with gpu value: True
+2022-02-28 11:22:20,432 — [MainThread] - src.model_service -  model_service.py.__init__(35) - INFO - environment requested languages ['all']
+2022-02-28 11:33:51,964 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(55) - INFO - User has provided gpu as True gpu_present True
+2022-02-28 11:33:51,964 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(60) - INFO - ### GPU Utilization ###
+2022-02-28 11:33:52,121 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(66) - INFO - available GPUs ['0'], all GPUs [0], excluded GPUs [0]
+2022-02-28 11:33:52,194 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(74) - INFO - Selected GPUs: [] requested GPUs [0]
+2022-02-28 11:33:52,195 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(81) - INFO - selected gpu index: None selecting device: cuda
+2022-02-28 11:33:52,217 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(29) - INFO - Initializing realtime and batch inference service
+2022-02-28 11:33:52,218 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(38) - INFO - User has provided gpu as True
+2022-02-28 11:33:52,218 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(41) - INFO - GPU available on machine True
+2022-02-28 11:33:52,218 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(44) - INFO - Loading models from ./ with gpu value: True
+2022-02-28 11:33:52,218 — [MainThread] - src.model_service -  model_service.py.__init__(35) - INFO - environment requested languages ['all']
+2022-02-28 11:33:52,218 — [MainThread] - src.model_service -  model_service.py.__init__(43) - INFO - configuration from model_dict.json is {'hi': {'path': '/home/neo/vakyansh_2022/deployed_models/hindi/hindi.pt', 'enablePunctuation': True, 'enableITN': True}}
+2022-02-28 11:33:52,218 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(20) - INFO - *** GPU is enabled: True ***
+2022-02-28 11:33:52,218 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(23) - INFO - *** Total number of gpus allocated are 1 ***
+2022-02-28 11:33:52,219 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(24) - INFO - *** Cuda Version 11.0 ***
+2022-02-28 11:33:52,219 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(25) - INFO - *** Python process id 550841 ***
+2022-02-28 11:33:52,219 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(26) - INFO - *** The gpu device info : ***
+2022-02-28 11:33:52,220 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(28) - INFO - GPU 0 - Tesla V100-PCIE-16GB
+2022-02-28 11:54:36,969 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(55) - INFO - User has provided gpu as True gpu_present True
+2022-02-28 11:54:36,969 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(60) - INFO - ### GPU Utilization ###
+2022-02-28 11:54:37,110 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(66) - INFO - available GPUs ['0'], all GPUs [0], excluded GPUs [0]
+2022-02-28 11:54:37,180 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(74) - INFO - Selected GPUs: [] requested GPUs [0]
+2022-02-28 11:54:37,181 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(81) - INFO - selected gpu index: None selecting device: cuda
+2022-02-28 11:54:37,203 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(29) - INFO - Initializing realtime and batch inference service
+2022-02-28 11:54:37,203 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(38) - INFO - User has provided gpu as True
+2022-02-28 11:54:37,203 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(41) - INFO - GPU available on machine True
+2022-02-28 11:54:37,204 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(44) - INFO - Loading models from ./ with gpu value: True
+2022-02-28 11:54:37,204 — [MainThread] - src.model_service -  model_service.py.__init__(35) - INFO - environment requested languages ['all']
+2022-02-28 11:54:37,204 — [MainThread] - src.model_service -  model_service.py.__init__(43) - INFO - configuration from model_dict.json is {'hi': {'path': '/home/neo/vakyansh_2022/deployed_models/hindi/hindi.pt', 'enablePunctuation': True, 'enableITN': True}}
+2022-02-28 11:54:37,204 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(20) - INFO - *** GPU is enabled: True ***
+2022-02-28 11:54:37,204 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(23) - INFO - *** Total number of gpus allocated are 1 ***
+2022-02-28 11:54:37,204 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(24) - INFO - *** Cuda Version 11.0 ***
+2022-02-28 11:54:37,204 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(25) - INFO - *** Python process id 555202 ***
+2022-02-28 11:54:37,205 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(26) - INFO - *** The gpu device info : ***
+2022-02-28 11:54:37,205 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(28) - INFO - GPU 0 - Tesla V100-PCIE-16GB
+2022-02-28 12:08:36,544 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(55) - INFO - User has provided gpu as True gpu_present True
+2022-02-28 12:08:36,544 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(60) - INFO - ### GPU Utilization ###
+2022-02-28 12:08:36,684 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(66) - INFO - available GPUs ['0'], all GPUs [0], excluded GPUs [0]
+2022-02-28 12:08:36,757 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(74) - INFO - Selected GPUs: [] requested GPUs [0]
+2022-02-28 12:08:36,757 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(81) - INFO - selected gpu index: None selecting device: cuda
+2022-02-28 12:08:36,779 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(29) - INFO - Initializing realtime and batch inference service
+2022-02-28 12:08:36,779 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(38) - INFO - User has provided gpu as True
+2022-02-28 12:08:36,779 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(41) - INFO - GPU available on machine True
+2022-02-28 12:08:36,779 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(44) - INFO - Loading models from /home/neo/vakyansh_2022/ with gpu value: True
+2022-02-28 12:08:36,779 — [MainThread] - src.model_service -  model_service.py.__init__(35) - INFO - environment requested languages ['all']
+2022-02-28 12:23:09,515 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(55) - INFO - User has provided gpu as True gpu_present True
+2022-02-28 12:23:09,515 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(60) - INFO - ### GPU Utilization ###
+2022-02-28 12:23:09,649 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(66) - INFO - available GPUs ['0'], all GPUs [0], excluded GPUs [0]
+2022-02-28 12:23:09,716 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(74) - INFO - Selected GPUs: [] requested GPUs [0]
+2022-02-28 12:23:09,716 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(81) - INFO - selected gpu index: None selecting device: cuda
+2022-02-28 12:23:09,737 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(29) - INFO - Initializing realtime and batch inference service
+2022-02-28 12:23:09,737 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(38) - INFO - User has provided gpu as True
+2022-02-28 12:23:09,737 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(41) - INFO - GPU available on machine True
+2022-02-28 12:23:09,737 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(44) - INFO - Loading models from /home/neo/vakyansh_2022/speech-recognition-open-api/ with gpu value: True
+2022-02-28 12:23:09,737 — [MainThread] - src.model_service -  model_service.py.__init__(35) - INFO - environment requested languages ['all']
+2022-02-28 12:23:09,738 — [MainThread] - src.model_service -  model_service.py.__init__(43) - INFO - configuration from model_dict.json is {'hi': {'path': 'deployed_models/hindi/hindi.pt', 'enablePunctuation': True, 'enableITN': True}}
+2022-02-28 12:23:09,738 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(20) - INFO - *** GPU is enabled: True ***
+2022-02-28 12:23:09,738 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(23) - INFO - *** Total number of gpus allocated are 1 ***
+2022-02-28 12:23:09,738 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(24) - INFO - *** Cuda Version 11.0 ***
+2022-02-28 12:23:09,738 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(25) - INFO - *** Python process id 560400 ***
+2022-02-28 12:23:09,738 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(26) - INFO - *** The gpu device info : ***
+2022-02-28 12:23:09,739 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(28) - INFO - GPU 0 - Tesla V100-PCIE-16GB
+2022-02-28 12:36:49,005 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(55) - INFO - User has provided gpu as True gpu_present True
+2022-02-28 12:36:49,005 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(60) - INFO - ### GPU Utilization ###
+2022-02-28 12:36:49,143 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(66) - INFO - available GPUs ['0'], all GPUs [0], excluded GPUs [0]
+2022-02-28 12:36:49,209 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(74) - INFO - Selected GPUs: [] requested GPUs [0]
+2022-02-28 12:36:49,210 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(81) - INFO - selected gpu index: None selecting device: cuda
+2022-02-28 12:36:49,231 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(29) - INFO - Initializing realtime and batch inference service
+2022-02-28 12:36:49,231 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(38) - INFO - User has provided gpu as True
+2022-02-28 12:36:49,231 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(41) - INFO - GPU available on machine True
+2022-02-28 12:36:49,231 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(44) - INFO - Loading models from /home/neo/vakyansh_2022/speech-recognition-open-api with gpu value: True
+2022-02-28 12:36:49,231 — [MainThread] - src.model_service -  model_service.py.__init__(35) - INFO - environment requested languages ['all']
+2022-02-28 12:45:34,167 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(55) - INFO - User has provided gpu as True gpu_present True
+2022-02-28 12:45:34,167 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(60) - INFO - ### GPU Utilization ###
+2022-02-28 12:45:34,261 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(66) - INFO - available GPUs ['0'], all GPUs [0], excluded GPUs [0]
+2022-02-28 12:45:34,308 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(74) - INFO - Selected GPUs: [] requested GPUs [0]
+2022-02-28 12:45:34,308 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(81) - INFO - selected gpu index: None selecting device: cuda
+2022-02-28 12:45:34,326 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(29) - INFO - Initializing realtime and batch inference service
+2022-02-28 12:45:34,326 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(38) - INFO - User has provided gpu as True
+2022-02-28 12:45:34,326 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(41) - INFO - GPU available on machine True
+2022-02-28 12:45:34,326 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(44) - INFO - Loading models from /home/neo/vakyansh_2022/speech-recognition-open-api/ with gpu value: True
+2022-02-28 12:45:34,326 — [MainThread] - src.model_service -  model_service.py.__init__(35) - INFO - environment requested languages ['all']
+2022-02-28 12:45:34,327 — [MainThread] - src.model_service -  model_service.py.__init__(43) - INFO - configuration from model_dict.json is {'hi': {'path': '/deployed_models/hindi/hindi.pt', 'enablePunctuation': True, 'enableITN': True}}
+2022-02-28 12:45:34,327 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(20) - INFO - *** GPU is enabled: True ***
+2022-02-28 12:45:34,327 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(23) - INFO - *** Total number of gpus allocated are 1 ***
+2022-02-28 12:45:34,327 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(24) - INFO - *** Cuda Version 11.0 ***
+2022-02-28 12:45:34,327 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(25) - INFO - *** Python process id 564622 ***
+2022-02-28 12:45:34,327 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(26) - INFO - *** The gpu device info : ***
+2022-02-28 12:45:34,328 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(28) - INFO - GPU 0 - Tesla V100-PCIE-16GB
+2022-02-28 12:45:45,022 — [MainThread] - src.lib.inference_lib -  inference_lib.py.load_model_and_generator(463) - INFO - Loading model from /home/neo/vakyansh_2022/speech-recognition-open-api/deployed_models/hindi/hindi.pt cuda True
+2022-02-28 12:45:45,024 — [MainThread] - src.lib.inference_lib -  inference_lib.py.load_model_and_generator(467) - INFO - using current device: 0
+2022-02-28 12:45:48,192 — [MainThread] - src.lib.inference_lib -  inference_lib.py.load_model_and_generator(471) - INFO - Before half torch.float32
+2022-02-28 12:45:48,214 — [MainThread] - src.lib.inference_lib -  inference_lib.py.load_model_and_generator(478) - INFO - After half torch.float16
+2022-02-28 12:45:48,214 — [MainThread] - src.lib.inference_lib -  inference_lib.py.load_model_and_generator(482) - INFO - hi Model initialized with GPU successfully
+2022-02-28 12:45:48,215 — [MainThread] - src.model_service -  model_service.py.__init__(63) - INFO - Loaded hi model base_path is /home/neo/vakyansh_2022/speech-recognition-open-api/deployed_models/hindi
+2022-02-28 12:45:55,925 — [MainThread] - src.model_service -  model_service.py.__init__(66) - INFO - Loaded hi model with Punctuation
+2022-02-28 12:45:55,926 — [MainThread] - src.model_service -  model_service.py.__init__(69) - INFO - Loaded hi model with ITN
+2022-02-28 12:45:55,926 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(50) - INFO - Models Loaded Successfully
+2022-02-28 13:22:48,033 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(55) - INFO - User has provided gpu as True gpu_present True
+2022-02-28 13:22:48,034 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(60) - INFO - ### GPU Utilization ###
+2022-02-28 13:22:48,151 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(66) - INFO - available GPUs ['0'], all GPUs [0], excluded GPUs [0]
+2022-02-28 13:22:48,209 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(74) - INFO - Selected GPUs: [] requested GPUs [0]
+2022-02-28 13:22:48,210 — [MainThread] - src.lib.inference_lib -  inference_lib.py.get_cuda_device(81) - INFO - selected gpu index: None selecting device: cuda
+2022-02-28 13:22:48,230 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(29) - INFO - Initializing realtime and batch inference service
+2022-02-28 13:22:48,230 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(38) - INFO - User has provided gpu as True
+2022-02-28 13:22:48,230 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(41) - INFO - GPU available on machine True
+2022-02-28 13:22:48,230 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(44) - INFO - Loading models from /home/neo/vakyansh_2022/speech-recognition-open-api/ with gpu value: True
+2022-02-28 13:22:48,230 — [MainThread] - src.model_service -  model_service.py.__init__(35) - INFO - environment requested languages ['all']
+2022-02-28 13:22:48,230 — [MainThread] - src.model_service -  model_service.py.__init__(43) - INFO - configuration from model_dict.json is {'hi': {'path': '/deployed_models/hindi/hindi.pt', 'enablePunctuation': True, 'enableITN': True}}
+2022-02-28 13:22:48,230 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(20) - INFO - *** GPU is enabled: True ***
+2022-02-28 13:22:48,231 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(23) - INFO - *** Total number of gpus allocated are 1 ***
+2022-02-28 13:22:48,231 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(24) - INFO - *** Cuda Version 11.0 ***
+2022-02-28 13:22:48,231 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(25) - INFO - *** Python process id 571222 ***
+2022-02-28 13:22:48,231 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(26) - INFO - *** The gpu device info : ***
+2022-02-28 13:22:48,232 — [MainThread] - src.model_service -  model_service.py.get_gpu_info(28) - INFO - GPU 0 - Tesla V100-PCIE-16GB
+2022-02-28 13:22:59,928 — [MainThread] - src.lib.inference_lib -  inference_lib.py.load_model_and_generator(463) - INFO - Loading model from /home/neo/vakyansh_2022/speech-recognition-open-api/deployed_models/hindi/hindi.pt cuda True
+2022-02-28 13:22:59,931 — [MainThread] - src.lib.inference_lib -  inference_lib.py.load_model_and_generator(467) - INFO - using current device: 0
+2022-02-28 13:23:03,113 — [MainThread] - src.lib.inference_lib -  inference_lib.py.load_model_and_generator(471) - INFO - Before half torch.float32
+2022-02-28 13:23:03,126 — [MainThread] - src.lib.inference_lib -  inference_lib.py.load_model_and_generator(478) - INFO - After half torch.float16
+2022-02-28 13:23:03,126 — [MainThread] - src.lib.inference_lib -  inference_lib.py.load_model_and_generator(482) - INFO - hi Model initialized with GPU successfully
+2022-02-28 13:23:03,126 — [MainThread] - src.model_service -  model_service.py.__init__(63) - INFO - Loaded hi model base_path is /home/neo/vakyansh_2022/speech-recognition-open-api/deployed_models/hindi
+2022-02-28 13:23:11,498 — [MainThread] - src.model_service -  model_service.py.__init__(66) - INFO - Loaded hi model with Punctuation
+2022-02-28 13:23:11,498 — [MainThread] - src.model_service -  model_service.py.__init__(69) - INFO - Loaded hi model with ITN
+2022-02-28 13:23:11,498 — [MainThread] - src.speech_recognition_service -  speech_recognition_service.py.__init__(50) - INFO - Models Loaded Successfully

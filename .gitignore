@@ -1,0 +1,7 @@
+.pytest_cache
+.idea
+__pycache__/
+.DS_Store
+model_dict.json
+ingress-secret.yaml
+.scannerwork/
