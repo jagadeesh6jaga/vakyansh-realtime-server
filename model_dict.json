@@ -3,5 +3,21 @@
         "path": "/deployed_models/hindi/hindi.pt",
         "enablePunctuation": true,
         "enableITN": true
+    },
+    "kn": {
+        "path": "/deployed_models/kannada/final_model.pt",
+        "enablePunctuation": false,
+        "enableITN": false
+    },
+    "ta": {
+        "path": "/deployed_models/tamil/final_model.pt",
+        "enablePunctuation": false,
+        "enableITN": false
+    },
+    "en": {
+        "path": "/deployed_models/indian_english/final_model.pt",
+        "enablePunctuation": false,
+        "enableITN": false
     }
+    
 }

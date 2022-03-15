@@ -166,9 +166,9 @@ class W2lDecoder(object):
         encoder_input = {
             k: v for k, v in sample["net_input"].items() if k != "prev_output_tokens"
         }
-        LOGGER.debug(f'encoder_input {encoder_input}')
+        #LOGGER.debug(f'encoder_input {encoder_input}')
         emissions = self.get_emissions(models, encoder_input)
-        LOGGER.debug(f'emission {emissions}')
+        #LOGGER.debug(f'emission {emissions}')
         return self.decode(emissions)
 
     def get_emissions(self, models, encoder_input):
@@ -297,7 +297,7 @@ class W2lKenLMDecoder(W2lDecoder):
             )
 
     def decode(self, emissions):
-        LOGGER.debug('Decoder from W2lKenLMDecoder')
+        #LOGGER.debug('Decoder from W2lKenLMDecoder')
         B, T, N = emissions.size()
         hypos = []
         for b in range(B):
@@ -305,7 +305,7 @@ class W2lKenLMDecoder(W2lDecoder):
             results = self.decoder.decode(emissions_ptr, T, N)
 
             nbest_results = results[: self.nbest]
-            LOGGER.debug(f'Decoder from W2lKenLMDecoder nbest_results {nbest_results}')
+            #LOGGER.debug(f'Decoder from W2lKenLMDecoder nbest_results {nbest_results}')
             hypos.append(
                 [
                     {
@@ -318,7 +318,7 @@ class W2lKenLMDecoder(W2lDecoder):
                     for result in nbest_results
                 ]
             )
-            LOGGER.debug(f'returning hypos {hypos}')
+            #LOGGER.debug(f'returning hypos {hypos}')
         return hypos
 
 
@@ -376,14 +376,14 @@ def get_results(wav_path, dict_path, generator, use_cuda=False, w2v_path=None, m
     dir_name = src.media_convertor.media_conversion(wav_path, duration_limit=15)
     audio_file = dir_name / 'clipped_audio.wav'
     normalized_audio = AudioNormalization(audio_file).loudness_normalization_effects()
-    LOGGER.debug('Audio normalization done')
+    #LOGGER.debug('Audio normalization done')
     silence = AudioSegment.silent(duration=500)
-    LOGGER.debug('Appending silence')
+    #LOGGER.debug('Appending silence')
     sound = silence + normalized_audio + silence
     sound.export('test_sil.wav', format='wav')
-    LOGGER.debug(f"The sound object is : {sound}")
+    ##LOGGER.debug(f"The sound object is : {sound}")
     wav = np.array(sound.get_array_of_samples()).astype('float64')
-    LOGGER.debug(f"The shape of the audio is {wav.shape}")
+    #LOGGER.debug(f"The shape of the audio is {wav.shape}")
     # wav = np.array(normalized_audio.get_array_of_samples()).astype('float64')
 
     LOGGER.info(f'using current device: {torch.cuda.current_device()}')
@@ -393,39 +393,39 @@ def get_results(wav_path, dict_path, generator, use_cuda=False, w2v_path=None, m
     else:
         feature = get_feature_for_bytes(wav, 16000)
 
-    LOGGER.debug(f"feature : {feature}")
+    #LOGGER.debug(f"feature : {feature}")
     target_dict = Dictionary.load(dict_path)
-    LOGGER.debug(f"target_dict : {target_dict} from path: {dict_path}")
+    #LOGGER.debug(f"target_dict : {target_dict} from path: {dict_path}")
 
     if half:
         net_input["source"] = feature.unsqueeze(0).half()
     else:
         net_input["source"] = feature.unsqueeze(0)
 
-    LOGGER.debug(f"net input")
+    #LOGGER.debug(f"net input")
 
     padding_mask = torch.BoolTensor(net_input["source"].size(1)).fill_(False).unsqueeze(0)
-    LOGGER.debug(f"padding_mask")
+    #LOGGER.debug(f"padding_mask")
 
     net_input["padding_mask"] = padding_mask
     sample["net_input"] = net_input
 
-    LOGGER.debug(f"moving to cuda")
+    #LOGGER.debug(f"moving to cuda")
     sample = utils.move_to_cuda(sample, SELECTED_DEVICE) if use_cuda else sample
-    LOGGER.debug(f"moved to cuda")
+    #LOGGER.debug(f"moved to cuda")
 
     with torch.no_grad():
-        LOGGER.debug(f"generator starting...")
+        #LOGGER.debug(f"generator starting...")
         hypo = generator.generate(model, sample, prefix_tokens=None)
-        LOGGER.debug(f"generated...")
+        #LOGGER.debug(f"generated...")
     hyp_pieces = target_dict.string(hypo[0][0]["tokens"].int().cpu())
-    LOGGER.debug(f"hyp_pieces...")
+    #LOGGER.debug(f"hyp_pieces...")
     text = post_process(hyp_pieces, 'letter')
-    LOGGER.debug(f"deleting sample...")
+    #LOGGER.debug(f"deleting sample...")
     del sample
-    LOGGER.debug(f"clearing cuda cache...")
+    #LOGGER.debug(f"clearing cuda cache...")
     torch.cuda.empty_cache()
-    LOGGER.debug(f"infer completed {text}")
+    #LOGGER.debug(f"infer completed {text}")
     return text
 
 

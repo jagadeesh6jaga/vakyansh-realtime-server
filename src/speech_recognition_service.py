@@ -126,8 +126,8 @@ class SpeechRecognizer(speech_recognition_open_api_pb2_grpc.SpeechRecognizerServ
     def recognize_audio(self, request_iterator, context):
         for data in request_iterator:
             self.count += 1
-            LOGGER.debug("Request received for user %s language: %s data.isEnd: %s", data.user, data.language,
-                         data.isEnd)
+            # LOGGER.debug("Request received for user %s language: %s data.isEnd: %s", data.user, data.language,
+            #              data.isEnd)
             LOGGER.info(" Total Connected Users: %s ", len(self.client_buffers))
             if data.isEnd:
                 self.disconnect(data.user)
@@ -167,15 +167,15 @@ class SpeechRecognizer(speech_recognition_open_api_pb2_grpc.SpeechRecognizerServ
                 self.client_transcription[user] = ""
             transcription = (self.client_transcription[user] + " " + result['transcription']).lstrip()
             result['transcription'] = transcription
-            LOGGER.debug("transcription for user %s language: %s transcription: %s", user, data.language, transcription)
+            # LOGGER.debug("transcription for user %s language: %s transcription: %s", user, data.language, transcription)
             if append_result:
                 self.client_transcription[user] = transcription
                 if local_file_name is not None:
                     with open(local_file_name.replace(".wav", ".txt"), 'w') as local_file:
                         local_file.write(result['transcription'])
             result["id"] = index
-            LOGGER.debug("Responded for user %s language: %s transcription: %s and result %s", user, data.language,
-                         transcription, result)
+            # LOGGER.debug("Responded for user %s language: %s transcription: %s and result %s", user, data.language,
+            #              transcription, result)
 
             if result['status'] != "OK":
                 result["success"] = False
@@ -214,7 +214,7 @@ class SpeechRecognizer(speech_recognition_open_api_pb2_grpc.SpeechRecognizerServ
     def preprocess(self, data):
         append_result = False
         if data.audio is not None and len(data.audio) > 0:
-            LOGGER.debug("Audio length: %s, speaking: %s", len(data.audio), data.speaking)
+            # LOGGER.debug("Audio length: %s, speaking: %s", len(data.audio), data.speaking)
             if data.user in self.client_buffers:
                 self.client_buffers[data.user] += data.audio
             else:
@@ -224,6 +224,6 @@ class SpeechRecognizer(speech_recognition_open_api_pb2_grpc.SpeechRecognizerServ
         if not data.speaking:
             self.clear_buffers(data.user)
             append_result = True
-        LOGGER.debug("Buffer length is %s for user %s language: %s isSpeaking: %s",
-                     len(buffer) if buffer is not None else 0, data.user, data.language, data.speaking)
+        # LOGGER.debug("Buffer length is %s for user %s language: %s isSpeaking: %s",
+        #              len(buffer) if buffer is not None else 0, data.user, data.language, data.speaking)
         return buffer, append_result, None

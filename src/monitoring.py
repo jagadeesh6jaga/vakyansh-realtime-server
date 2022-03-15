@@ -10,7 +10,7 @@ def monitor(func):
         start = time.monotonic_ns()
         return_value = func(*args, **kwargs)
         LOGGER.info(
-            f'function {func.__name__} took {(time.monotonic_ns() - start) / 1000000} milliseconds with arguments {args}')
+            f'function {func.__name__} took {(time.monotonic_ns() - start) / 1000000} milliseconds ')
         return return_value
 
     return wrapped_function

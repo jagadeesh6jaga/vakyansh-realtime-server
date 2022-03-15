@@ -16,9 +16,9 @@ class AudioNormalization:
         return normalized_audio
 
     def loudness_normalization_effects(self):
-        LOGGER.debug(f'doing loudness_normalization_effects')
+        #LOGGER.debug(f'doing loudness_normalization_effects')
         audio_file = AudioSegment.from_file(self.wav_file, format='wav')
-        LOGGER.debug(f'doing loudness_normalization_effects for file {audio_file}')
+        #LOGGER.debug(f'doing loudness_normalization_effects for file {audio_file}')
         normalized_audio = effects.normalize(audio_file)
-        LOGGER.debug(f'done loudness_normalization_effects for file {audio_file}')
+        #LOGGER.debug(f'done loudness_normalization_effects for file {audio_file}')
         return normalized_audio

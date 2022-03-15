@@ -79,10 +79,10 @@ class ModelService:
             model=model_item.get_model(),
             half=self.half
         )
-        LOGGER.debug("The model transcript is: %s", response)
+        #LOGGER.debug("The model transcript is: %s", response)
         punctuated_text = self.apply_punctuation(response, language, punctuate)
         itn_text = self.apply_itn(punctuated_text, language, itn)
-        LOGGER.debug("The model transcript after punctuation and itn: %s", itn_text)
+        #LOGGER.debug("The model transcript after punctuation and itn: %s", itn_text)
         return {
             'transcription': itn_text,
             'status': 'OK'

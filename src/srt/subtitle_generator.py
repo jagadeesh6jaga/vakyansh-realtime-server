@@ -13,10 +13,10 @@ LOGGER = log_setup.get_logger(__name__)
 def noise_suppression(dir_name: str, denoiser_path):
     cwd = os.getcwd()
     os.chdir(denoiser_path)
-    LOGGER.debug(f'Calling noise suppression from denoiser_path {denoiser_path} on directory {dir_name}')
+    #LOGGER.debug(f'Calling noise suppression from denoiser_path {denoiser_path} on directory {dir_name}')
     denoiser_command = "python -m denoiser.enhance --dns48 --noisy_dir {} --out_dir {}  --num_workers {} --device cpu".format(
         dir_name, dir_name, 1)
-    LOGGER.debug(f'Calling denoiser command {denoiser_command}')
+    #LOGGER.debug(f'Calling denoiser command {denoiser_command}')
     subprocess.call([denoiser_command], shell=True)
     LOGGER.debug(f'denoiser done')
     os.chdir(cwd)
@@ -24,10 +24,10 @@ def noise_suppression(dir_name: str, denoiser_path):
 
 def get_srt(file, model, generator, dict_path, denoiser_path, audio_threshold=5, language='hi', half=False):
     dir_name = media_conversion(file, duration_limit=audio_threshold)
-    LOGGER.debug(f'Media conversion done for file {file}')
+    #LOGGER.debug(f'Media conversion done for file {file}')
     noise_suppression(str(dir_name), denoiser_path)
     audio_file = str(dir_name / 'clipped_audio_enhanced.wav')
-    LOGGER.debug(f'Requesting generate_srt on audio file {audio_file}')
+    #LOGGER.debug(f'Requesting generate_srt on audio file {audio_file}')
     result = generate_srt(wav_path=audio_file, language=language, model=model, generator=generator,
                           cuda=torch.cuda.is_available(), dict_path=dict_path, half=half)
 
